@@ -1,0 +1,148 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <title>生命活力自测实验室</title>
+    <meta name="description" content="course, web, coding">
+    <meta name="author" content="qixinyue">
+	<!--step 1.2 响应式布局-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!--step 1.1 引入bootstrap的css样式-->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+	<!--step 1.2 响应式布局-->
+    <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
+	
+	<style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+
+  </head>
+
+  <body>
+	
+	<!-- step 2 导航栏-->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="#">实验主页</a>
+          <div class="nav-collapse collapse">
+			<!-- step 2.1下拉菜单-->
+            <ul class="nav">
+              <li class="active"><a href="#">实验介绍</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">更多 <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="data-analysis#">数据分析</a></li>
+                  <li class="divider"></li>
+                  <li><a href="groupwork#">小组分工</a></li>
+                </ul>
+              </li>
+            </ul>
+			<!--end 下拉菜单-->
+			<!-- step 2.2 表单 -->
+            <form class="navbar-form pull-right">
+              <input class="span2" type="text" placeholder="search">
+              <button type="submit" class="btn">搜索</button>
+            </form>
+			<!-- end 表单-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- step 3 引入hero-unit组件，作为我们的标题区域 -->
+      <div class="hero-unit" style="background-color:#CCFF80">
+        <h1 style="color:#272727">欢迎来到生命活力测评实验平台</h1>
+        <p style="color:#4F4F4F;margin-top:20px;margin-bottom:20px;">您好！本平台为您和您关心的人提供抑郁测评量表和自杀倾向实验。如果您对实验结果和后续进展感兴趣，欢迎联系我们。 </p>
+        <p><a href="#exp" class="btn btn-info btn-large">开始测评 »</a></p>
+      </div>
+	  
+
+      <!-- step 4 设置图片内容，采用span3,span3,span3,span3的栅格布局 -->
+      <div class="row">
+        <div class="span3">
+          <img id="exp" src="images/忧郁.jpg" style="width:350px;height:300px;">
+        </div>
+		<div class="span3">
+		  <img src="images/女孩.jpg" style="width:350px;height:300px">
+        </div>
+		<div class="span3">
+		  <img src="images/男孩.jpg" style="width:350px;height:300px">
+		</div>
+		<div class="span3">
+		  <img src="images/致意.jpg" style="width:350px;height:300px">
+		</div>
+      </div>
+	  <!-- step 4 end-->
+	  
+	  <!-- step 5 设置内容，注意是重新建立一个.row的div区域，并为其设置栅格布局-->
+	  <!-- 此处我为当前div设置了边界距离，采用了内联样式；鼓励大家单独写成css文件，便于管理-->
+      <div class="row" style="margin-top:10px;margin-bottom:100px;">
+        <div class="span3">
+          <h2>知情同意</h2>
+          <p>我们将严格遵守美国心理学会制定的人类被试道德规范，不会泄露您的任何实验数据和身份信息。本实验经过众多学者筛查，其原型已被使用多年，被证明不会对参与者造成身心伤害，请您放心参与实验。 </p>
+          <p><a class="btn" href="#">详细说明 »</a></p>
+       </div>
+	   <div class="span3">
+          <h2>问卷填写</h2>
+          <p>问卷将会收集和您有关的一些情况，请放心填写。</p>
+          <p><a class="btn" href="#">开始填写 »</a></p>
+        </div>
+	   <div class="span3">
+          <h2>内隐实验</h2>
+          <p>这是一个用内隐联想法观察个体自杀倾向的实验。您的反应时将被记录用来作为反映自杀倾向的指标。点击”开始实验“后，请认真阅读指导语，然后快速准确进行实验！请从头到尾完成，方可生成有效实验结果。</p>
+          <p><a class="btn" href="#">开始实验 »</a></p>
+        </div>
+        <div class="span3">
+          <h2>联系方式</h2>
+          <p>如果您希望得知您的实验结果，或者获得更多优质测评资源，欢迎您联系我们。实验室email：shengminghuoli2018@163.com。电话：339-6815。您还可以将我们的实验室分享给朋友和家人。</p>
+          <p><a class="btn" href="#">分享网站 »</a></p>
+        </div>
+      </div>
+	  <!-- step 5 end-->
+      
+	  <!-- step 6 添加一些说明文字-->
+	  <div class="row" style="margin-top:100px;padding:30px;background-color:WhiteSmoke">	  
+	  <dl class="dl-horizontal">
+			<dt>关于实验</dt>
+			<dd>本实验由@生命活力测评实验室设计制作，我们是力求科学客观的心理学团队，致力于为您打造提供正规、公开的测评和严谨心理学知识的专业平台。本实验所获数据将由平台分析并妥善保存。</dd>
+			<dt>友情感谢</dt>
+			<dd>北京师范大学心理学部（Beijing Normal University School of Psychology）实验心理学实验课程团队（Practices in Experimental Psychology）To be continued……</dd>
+			<dt>关于实验室</dt>
+			<dd>生命活力测评实验室成立于2018年10月，自发布第一份抑郁&自杀倾向测评已来，已帮助超过三万名用户，总计100,000+次媒体转发和评论。感谢您的支持与厚爱，这是我们继续走下去的动力！</dd>
+	  </dl>
+	  </div>
+	  <!-- step 6 end-->
+	  <hr>
+	
+	  <!-- step 7 添加页脚-->
+      <footer>
+        <p>解释权所有@生命活力测评实验室</p>
+      </footer>
+	  <!-- step 7 end -->
+
+    </div> <!-- /container -->
+
+	<!--step 1.3 引入jquery和bootstrap的js文件 -->
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-alert.js"></script>
+    <script src="../assets/js/bootstrap-modal.js"></script>
+    <script src="../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script>
+
+  
+
+
+<!--RGB颜色对照表 http://tool.oschina.net/commons?type=3 -->
+</body></html>
