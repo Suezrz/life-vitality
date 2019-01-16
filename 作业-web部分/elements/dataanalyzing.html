@@ -1,0 +1,65 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <title>生命活力自测实验室</title>
+    <meta name="description" content="course, web, coding">
+    <meta name="author" content="qixinyue">
+	<!--step 1.2 响应式布局-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!--step 1.1 引入bootstrap的css样式-->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+	<!--step 1.2 响应式布局-->
+    <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
+	
+	<style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+
+  </head>
+
+  <body>
+	
+	<!-- step 2 导航栏-->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="#">实验主页</a>
+          <div class="nav-collapse collapse">
+			<!-- step 2.1下拉菜单-->
+            <ul class="nav">
+              <li class="active"><a href="#">实验介绍</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">更多 <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="data-analysis#">数据分析</a></li>
+                  <li class="divider"></li>
+                  <li><a href="groupwork#">小组分工</a></li>
+                </ul>
+              </li>
+            </ul>
+			<!--end 下拉菜单-->
+			<!-- step 2.2 表单 -->
+            <form class="navbar-form pull-right">
+              <input class="span2" type="text" placeholder="search">
+              <button type="submit" class="btn">搜索</button>
+            </form>
+			<!-- end 表单-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- step 3 引入hero-unit组件，作为我们的标题区域 -->
+      <div class="hero-unit" style="background-color:#CCFF80">
+        <h1 style="color:#272727">欢迎来到生命活力测评实验平台</h1>
+        <p style="color:#4F4F4F;margin-top:20px;margin-bottom:20px;">您好！本平台为您和您关心的人提供抑郁测评量表和自杀倾向实验。如果您对实验结果和后续进展感兴趣，欢迎联系我们。 </p>
+        <p><a href="#abc" class="btn btn-info btn-large">开始测评 »</a></p>
+      </div>
+	<p>数据分析：</p>
+	<p>思路：将抑郁测评量表得分与自杀倾向内隐测验成绩进行相关和回归分析，看二者的关系，以评价新型测评实验的应用前景。</p>
+	<p>方法：使用SPSS20.0进行数据分析。</p>
+	<p>预期结果：抑郁测评量表得分与自杀倾向内隐测验成绩将呈显著正相关关系，我们将发现抑郁对自杀倾向的显著预测作用。</p>
